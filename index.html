@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="./assets/fonts/AmericanCaptain.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+    <title>Dogecoin Trillionaire</title>
+    <style>
+      body {
+        opacity: 0;
+        visibility: hidden;
+        background-color: #efefef;
+      }
+
+      [data-fls-loaded] body {
+        animation: show-body 0.45s ease 0.2s forwards;
+      }
+
+      @keyframes show-body {
+        0% {
+          opacity: 0;
+          visibility: hidden;
+        }
+        100% {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    </style>
+    <script
+      type="module"
+      crossorigin=""
+      src="./js/index.min.js?v=1760774053690"
+    ></script>
+    <link
+      rel="stylesheet"
+      crossorigin=""
+      href="./css/index.min.css?v=1760774053690"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="overlay"></div>
+      <div class="menu-open-bg"></div>
+      <header data-fls-header="" class="header">
+        <div class="header__container">
+          <a href="../" class="header__logo">
+            <img alt="CLUTCH" src="./assets/img/logo.png" />
+          </a>
+          <div class="header__menu menu">
+            <button
+              type="button"
+              data-fls-menu=""
+              class="menu__icon icon-menu"
+            ></button>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" data-fls-scrollto=".about" class="menu__link"
+                    >About</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="#" data-fls-scrollto=".how" class="menu__link"
+                    >How to Buy</a
+                  >
+                </li>
+                <li class="menu__item logo-item">
+                  <a href="../" class="menu__item-logo">
+                    <img alt="CLUTCH" src="./assets/img/logo.png" />
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#"
+                    data-fls-scrollto=".tokenomics"
+                    data-fls-scrollto-top="180"
+                    class="menu__link"
+                    >tokenomics</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="#" data-fls-scrollto=".join" class="menu__link"
+                    >Join US</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__actions" data-fls-dynamic=".menu__body, 767.98">
+            <div class="header__social">
+              <a
+                href="https://x.com/clutcheaglesol"
+                target="_blank"
+                class="header__social-item"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewbox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M7.16633 10.2819L10.1426 14.25H14.5176L9.60633 7.70125L13.6926 3H12.0363L8.8382 6.67875L6.08008 3H1.70508L6.39883 9.25938L2.06133 14.25H3.71758L7.16633 10.2819ZM10.7676 13L4.20508 4.25H5.45508L12.0176 13H10.7676Z"
+                    fill="#FFEEC8"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://t.me/dogecointrillionaire_portal"
+                target="_blank"
+                class="header__social-item"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewbox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M13.2859 3.65008C13.4404 3.58507 13.6094 3.56265 13.7755 3.58515C13.9416 3.60765 14.0985 3.67424 14.2301 3.778C14.3617 3.88176 14.4631 4.0189 14.5237 4.17513C14.5843 4.33136 14.6019 4.50098 14.5747 4.66633L13.1572 13.2645C13.0197 14.0938 12.1097 14.5695 11.3491 14.1563C10.7128 13.8107 9.76782 13.2782 8.91782 12.7226C8.49282 12.4444 7.19095 11.5538 7.35095 10.9201C7.48845 10.3782 9.67595 8.34195 10.9259 7.13133C11.4166 6.6557 11.1928 6.38133 10.6134 6.81883C9.1747 7.90508 6.8647 9.55695 6.10095 10.022C5.4272 10.432 5.07595 10.502 4.65595 10.432C3.8897 10.3045 3.17907 10.107 2.59907 9.86633C1.81532 9.54133 1.85345 8.46383 2.59845 8.15008L13.2859 3.65008Z"
+                    fill="#FFEEC8"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <a
+              href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xComingSoon"
+              target="_blank"
+              class="header__button"
+            >
+              <span>Buy Now</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <div class="page__hero-about hero-about">
+          <div class="hero-about__bg">
+            <div class="hero-about__bg-sky">
+              <img alt="sky" src="./assets/img/hero/sky.webp" />
+            </div>
+            <div class="hero-about__bg-title">
+              <img alt="CLUTCH" src="./assets/img/hero/title.png" />
+            </div>
+            <div class="hero-about__bg-eagle">
+              <img alt="eagle" src="./assets/img/hero/eagle.png" />
+            </div>
+            <div class="hero-about__bg-flag">
+              <img alt="flag" src="./assets/img/hero/flag.png" />
+            </div>
+          </div>
+          <section class="page__about about" data-fls-watcher="navigator">
+            <div class="about__container">
+              <div class="about__content">
+                <h2 class="about__title">
+                  <img alt="About CLUTCH" src="./assets/img/about/title.webp" />
+                </h2>
+                <div class="about__body">
+                  <div class="about__text">
+                    <p>
+                      Dogecoin Trillionaire possesses an unquenchable thirst for adventure, soaring across the United States and embracing every culture, game and moment with boundless curiosity and optimism. Fearless on the pitch and uplifting off it, Clutch leads by action — rallying teammates, lifting spirits and turning every challenge into an opportunity to rise higher. A social spark and sports fanatic, Clutch, like all great midfielders, unites people wherever they go, proving that true flight is about purpose, passion and play.
+                    </p>
+                  </div>
+                  <div class="about__body-bottom">
+                    <div class="about__stars">
+                      <div class="about__star">
+                        <img alt="Star" src="./assets/img/about/Star.webp" />
+                      </div>
+                      <div class="about__star">
+                        <img alt="Star" src="./assets/img/about/Star.webp" />
+                      </div>
+                      <div class="about__star">
+                        <img alt="Star" src="./assets/img/about/Star.webp" />
+                      </div>
+                    </div>
+                    <div class="about__stars">
+                      <div class="about__star">
+                        <img alt="Star" src="./assets/img/about/Star.webp" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="about__actions">
+                  <a
+                    href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xComingSoon"
+                    target="_blank"
+                    class="about__button"
+                  >
+                    <span>Buy Now</span>
+                  </a>
+                  <div class="about__social">
+                    <a
+                      href="https://x.com/clutcheaglesol"
+                      class="about__social-item"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="22"
+                        viewbox="0 0 23 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M9.80703 12.8581L13.9228 18.3455H19.9729L13.1813 9.28936L18.8321 2.78809H16.5417L12.119 7.87537L8.30487 2.78809H2.25476L8.74567 11.4441L2.74741 18.3455H5.03781L9.80703 12.8581ZM14.7871 16.6169L5.71197 4.51669H7.44057L16.5157 16.6169H14.7871Z"
+                          fill="#3C2720"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a
+                      href="https://t.me/dogecointrillionaire_portal"
+                      class="about__social-item"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="22"
+                        viewbox="0 0 23 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M18.3314 4.0608C18.5579 3.96546 18.8059 3.93258 19.0494 3.96558C19.293 3.99857 19.5232 4.09625 19.7162 4.24843C19.9092 4.40061 20.0579 4.60174 20.1467 4.83088C20.2356 5.06002 20.2615 5.30879 20.2216 5.5513L18.1426 18.1619C17.9409 19.3783 16.6062 20.0759 15.4906 19.47C14.5575 18.963 13.1715 18.182 11.9248 17.3671C11.3015 16.9592 9.39206 15.653 9.62673 14.7235C9.8284 13.9287 13.0367 10.9422 14.8701 9.16663C15.5896 8.46905 15.2615 8.06663 14.4117 8.7083C12.3016 10.3015 8.91356 12.7242 7.7934 13.4062C6.80523 14.0076 6.29006 14.1102 5.67406 14.0076C4.55023 13.8206 3.50798 13.5309 2.65732 13.178C1.50782 12.7013 1.56373 11.121 2.6564 10.6608L18.3314 4.0608Z"
+                          fill="#3C2720"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="about__image">
+                <img alt="CLUTCH" src="./assets/img/about/01.png" />
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="page__line line">
+          <div class="line__row">
+            <div class="line__text"> RISES</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+          </div>
+          <div class="line__row">
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+          </div>
+        </div>
+        <div class="page__how-tokenomics how-tokenomics">
+          <div class="how-tokenomics__bg">
+            <img alt="bg" src="./assets/img/how/bg.webp" />
+          </div>
+          <section class="page__how how" data-fls-watcher="navigator">
+            <div class="how__container">
+              <div class="how__items">
+                <div class="how__item">
+                  <h3 class="how__item-title">
+                    <img alt="Star" src="./assets/img/how/Star.webp" />
+                    <span>Link Your Fortress</span>
+                  </h3>
+                  <div class="how__item-text">
+                    Connect Phantom with one bold
+                    click.
+                  </div>
+                </div>
+                <div class="how__item">
+                  <h3 class="how__item-title">
+                    <img alt="Star" src="./assets/img/how/Star.webp" />
+                    <span>Target the Prize</span>
+                  </h3>
+                  <div class="how__item-text">
+                    Pick ETH to $TRILLIONAIRE exchange on Solana.
+                  </div>
+                </div>
+                <div class="how__item">
+                  <h3 class="how__item-title">
+                    <img alt="Star" src="./assets/img/how/Star.webp" />
+                    <span>Commit Your FORTRESS</span>
+                  </h3>
+                  <div class="how__item-text">
+                    Dial in your SOL amount. Eye the slippage preview for
+                    liquidity's grip.
+                  </div>
+                </div>
+                <div class="how__item">
+                  <h3 class="how__item-title">
+                    <img alt="Star" src="./assets/img/how/Star.webp" />
+                    <span>Launch the Swap</span>
+                  </h3>
+                  <div class="how__item-text">
+                    Greenlight in your wallet . $TRILLIONAIRE touches down in
+                    moments—victory secured.
+                  </div>
+                </div>
+                <div class="how__image">
+                  <img alt="CLUTCH" src="./assets/img/how/01.png" />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="page__tokenomics tokenomics"
+            data-fls-watcher="navigator"
+          >
+            <div class="tokenomics__container">
+              <div class="tokenomics__items">
+                <div class="tokenomics__item">
+                  <h3 class="tokenomics__item-title">Liquidity</h3>
+                  <div class="tokenomics__item-value">burnt</div>
+                </div>
+                <div class="tokenomics__item">
+                  <h3 class="tokenomics__item-title">total supply</h3>
+                  <div class="tokenomics__item-value">1,000,000,000</div>
+                </div>
+                <div class="tokenomics__item">
+                  <h3 class="tokenomics__item-title">tax</h3>
+                  <div class="tokenomics__item-value">0/0</div>
+                </div>
+              </div>
+              <div class="tokenomics__ca">
+                <div class="tokenomics__ca-body">
+                  <span id="tokenValue"
+                    >0xComingSoon</span
+                  >
+                </div>
+                <button type="button" class="tokenomics__ca-button copy-ca-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="29"
+                    height="28"
+                    viewbox="0 0 29 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.2898 10.2803H4.55617C3.26195 10.2803 2.20944 11.2952 2.20944 12.5432V23.8578C2.20944 25.1058 3.26195 26.1207 4.55617 26.1207H16.2898C17.584 26.1207 18.6365 25.1058 18.6365 23.8578V12.5432C18.6365 11.2952 17.584 10.2803 16.2898 10.2803Z"
+                      fill="#EAEBED"
+                    ></path>
+                    <path
+                      d="M23.3289 3.49121H11.5952C10.9728 3.49121 10.3759 3.72962 9.93585 4.154C9.49575 4.57838 9.2485 5.15396 9.2485 5.75413V8.01704H18.6354C19.2578 8.01704 19.8547 8.25546 20.2948 8.67984C20.7349 9.10422 20.9821 9.6798 20.9821 10.28V19.3316H23.3289C23.9513 19.3316 24.5482 19.0932 24.9883 18.6688C25.4284 18.2445 25.6756 17.6689 25.6756 17.0687V5.75413C25.6756 5.15396 25.4284 4.57838 24.9883 4.154C24.5482 3.72962 23.9513 3.49121 23.3289 3.49121Z"
+                      fill="#EAEBED"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="page__line line">
+          <div class="line__row">
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+          </div>
+          <div class="line__row">
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+            <div class="line__text">Dogecoin Trillionaire</div>
+            <div class="line__star">
+              <img alt="star" src="./assets/img/line/Star.webp" />
+            </div>
+          </div>
+        </div>
+        <section class="page__join join" data-fls-watcher="navigator">
+          <div class="join__bg">
+            <img alt="bg" src="./assets/img/join/bg.webp" />
+          </div>
+          <div
+            class="join__container"
+            data-fls-watcher-threshold="0.45"
+            data-fls-watcher-once=""
+            data-fls-watcher=""
+          >
+            <h2 class="join__title">
+              <img alt="Join Us" src="./assets/img/join/title.webp" />
+            </h2>
+            <div class="join__body">
+              <div class="join__image">
+                <img alt="CLUTCH" src="./assets/img/join/eagle.png" />
+              </div>
+              <div class="join__actions">
+                <a
+                  href="https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xComingSoon"
+                  target="_blank"
+                  class="join__button"
+                >
+                  <span>Buy Now</span>
+                </a>
+                <div class="join__social">
+                  <a
+                    href="https://x.com/clutcheaglesol"
+                    target="_blank"
+                    class="join__social-item"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="22"
+                      viewbox="0 0 23 22"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.4207 12.8576L14.5365 18.345H20.5866L13.7949 9.28888L19.4457 2.7876H17.1553L12.7327 7.87488L8.91852 2.7876H2.86841L9.35931 11.4436L3.36106 18.345H5.65146L10.4207 12.8576ZM15.4008 16.6164L6.32562 4.5162H8.05422L17.1294 16.6164H15.4008Z"
+                        fill="#EBEBEB"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://t.me/dogecointrillionaire_portal"
+                    target="_blank"
+                    class="join__social-item"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23"
+                      height="22"
+                      viewbox="0 0 23 22"
+                      fill="none"
+                    >
+                      <path
+                        d="M18.4766 4.06031C18.7031 3.96497 18.9511 3.93209 19.1946 3.96509C19.4382 3.99809 19.6684 4.09576 19.8614 4.24794C20.0544 4.40012 20.2031 4.60125 20.2919 4.83039C20.3808 5.05953 20.4067 5.3083 20.3668 5.55081L18.2878 18.1614C18.0861 19.3778 16.7514 20.0754 15.6358 19.4695C14.7027 18.9626 13.3167 18.1816 12.07 17.3666C11.4467 16.9587 9.53727 15.6525 9.77193 14.723C9.9736 13.9282 13.1819 10.9417 15.0153 9.16615C15.7348 8.46856 15.4067 8.06615 14.5569 8.70781C12.4468 10.301 9.05877 12.7237 7.9386 13.4057C6.95043 14.0071 6.43527 14.1097 5.81927 14.0071C4.69543 13.8201 3.65318 13.5304 2.80252 13.1775C1.65302 12.7008 1.70893 11.1205 2.8016 10.6603L18.4766 4.06031Z"
+                        fill="#EBEBEB"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer data-fls-footer="" class="footer">
+        <div class="footer__container">
+          <div class="footer__text">All right reserved</div>
+          <div class="footer__text">trillionaire@2026</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
